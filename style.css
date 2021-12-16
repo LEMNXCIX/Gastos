@@ -1,0 +1,338 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+body {
+  width: 90%;
+  margin: auto;
+  font-family: "Poppins", sans-serif;
+}
+nav {
+  
+  width: 100%;
+  position: fixed;
+  /* background-color: red; */
+  height: 8vmin;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.3)
+  );
+  backdrop-filter: blur(2rem);
+  z-index: 1;
+  left: 0px;
+  padding: 0px 70px 0px 70px;
+}
+.nav-items a {
+  padding: 0px 10px 0px 15px;
+  
+}
+p{
+  padding: 0px 25px 0px 25px;
+}
+.slideshow-container {
+ 
+  background-color: antiquewhite;
+  height: 60vmin;
+  max-width: 85rem;
+ 
+  
+  display: block;
+  padding-bottom: 0px;
+  border-radius: 0.3rem;
+}
+.mySlides {
+  display: none;
+  align-items: center;
+
+  padding-top: 250px !important;
+}
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 25%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.slide-text{
+ color: #f2f2f2;
+  padding: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(0, 0, 0, 0.7);
+}
+.slide-img1{
+  width: 100%;
+  height: 550px;
+
+  background: url(https://www.holded.com/wp-content/uploads/2017/02/gastos.png) no-repeat center center/cover;
+  border-radius: 10px;
+  padding-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+.slide-img2{
+  width: 100%;
+  height: 550px;
+
+  background: url(https://settelecom.com.br/wp-content/uploads/2019/12/prefeito-quer-saber-como-economizar-mais-de-70-com-gastos-telefonicos-na-sua-prefeitura-1548849909-1200x675.png) no-repeat center center/cover;
+  border-radius: 10px;
+  padding-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+
+.info-slide {
+  width: 90%;
+  display: flex;
+  margin: auto;
+  align-items: center;
+  text-align: center;
+  height: 30vmin;
+}
+button {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 3px;
+  border: none;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+
+  padding: 0px 10px 0px 10px;
+}
+.button {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 3px;
+  border: none;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+}
+.button:hover {
+  color: black;
+  /* color: rgb(243, 242, 242); */
+  background-color: rgba(180, 180, 180, 0.5);
+  
+}
+canvas{
+  background-color: rgba(0, 0, 0, 0.788);
+  border-radius: 10px;  
+  color: #f2f2f2 !important;
+}
+.pop-up-container {
+  border-width: 100px;
+  border-color: azure;
+  /* arriba izquierda abajo derecha */
+  margin-top: 10px;
+  border-radius: 10px;
+  font-size: 15px;
+  display: none;
+  position: absolute;
+  right: 200px;
+  top: 60px;
+  height: 250px;
+  padding: 10px 20px 10px 20px;
+  background-color: rgb(255, 255, 255);
+  float: right;
+  z-index: 2;
+}
+.pop-up {
+  display: none;
+  position: fixed;
+  top: 6vmin;
+  left: 0px;
+  width: 200vmin;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+.input {
+  margin: 15px 0px 15px 0px;
+  padding: 5px;
+  width: 100%;
+  font-size: 15px;
+  font-family: "Poppins";
+}
+.reg{
+  width: 100%;
+  height: 40px;
+  margin-bottom: 30px;
+  background-color: rgba(0, 0, 0, 0.411);
+  color: #f2f2f2;
+}
+.registro {
+  padding-top: 100px;
+  border-radius: 5px;
+  width: 90%;
+  margin: auto;
+  background-color: rgba(255, 255, 255, 0.103);
+  text-align: center;
+}
+.form-registro {
+  padding-top: 20px;
+  text-align: start;
+  width: 40%;
+  margin: auto;
+}
+td{
+  text-align: center;
+
+}
+
+i {
+  padding: 0px 10px 0px 10px;
+}
+.grid {
+  padding-top: 90px;
+  display: grid;
+  grid-template-columns: 50% auto;
+  margin: auto;
+  gap: 10px;
+}
+.grid-item {
+
+  height: 500px;
+  margin: auto;
+  width: 100%;
+  overflow: auto;
+}
+table {
+  width: 100%;
+}
+i.fas.fa-times {
+  float: right;
+}
+.input-form {
+  width: 180px;
+  height: 30px;
+  font-size: 15px;
+  font-family: "Poppins";
+  padding: 5px;
+}
+
+
+@media (max-width: 1850px) {
+ 
+  .grid {
+    grid-template-columns: 50% 50%;
+  }
+  .grid-item {
+    overflow: auto;
+  }
+
+  .h2.h2 {
+    padding: 0px 0px 33px;
+  }
+}
+@media (max-width: 1320px) {
+  .grid {
+    grid-template-columns: 100%;
+  }
+  .pop-up-container {
+    right: 200px;
+  }
+  .input {
+    width: 100% !important;
+  }
+}
+@media (max-width: 800px) {
+ 
+  .form-registro {
+
+    margin: auto;
+    width: 80%;
+  }
+}
+@media (max-width: 580px) {
+  .pop-up-container {
+    width: 80%;
+    height: 300px;
+    right: 50px;
+  }
+  .form-registro {
+    margin: auto;
+    width: 90%;
+  }
+  .pop-up{
+    top: 8vmin;
+  }
+  .pop-up-container{
+    top: 40px;
+  }
+
+}
